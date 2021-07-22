@@ -8,9 +8,9 @@ import tinder_logo from './img/t_logo.png';
 const Header = () => {
     return (
         <div className='header'>
-            <PersonIcon />
+            <PersonIcon fontSize="large"/>
             <img className="header__logo" src={tinder_logo} alt="tinder logo fire"/>
-            <ForumIcon />
+            <ForumIcon fontSize="large"/>
         </div>
     )
 }
