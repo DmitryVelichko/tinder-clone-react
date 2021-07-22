@@ -5,8 +5,6 @@ import Header from './Header';
 function App() {
   return (
     <div className="App">
-       <h1>Let's build TINDER</h1>
-
        {/* Header */}
        <Header />
        {/* Tinder Cards */}
