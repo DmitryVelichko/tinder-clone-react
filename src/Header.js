@@ -1,12 +1,15 @@
 import React from 'react';
+import './Header.css';
 import PersonIcon from '@material-ui/icons/Person';
 import ForumIcon from '@material-ui/icons/Forum';
+import tinder_logo from './img/t_logo.png';
 
-function Header() {
+
+const Header = () => {
     return (
-        <div>
+        <div className='header'>
             <PersonIcon />
-            <h2>I am a header</h2>
+            <img className="header__logo" src={tinder_logo} alt="tinder logo fire"/>
             <ForumIcon />
         </div>
     )
