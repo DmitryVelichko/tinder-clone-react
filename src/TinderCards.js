@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import TinderCard from 'react-tinder-card';
-import Mahatma_img from './img/Mahatma.jpg';
-import Rabi_img from './img/rabindranat-tagor.jpg';
+import './TinderCards.css';
+// import Mahatma_img from './img/Mahatma.jpg';
+// import Rabi_img from './img/rabindranat-tagor.jpg';
 
 function TinderCards() {
     const [people, setPeople] = useState([
         {
-            name: 'Ivan Ivanov',
-            url: "Mahatma_img"
+            name: 'Mahatma Gandhi',
+            url: "https://helenadailyenglish.com/wp-content/uploads/2021/02/mahatma-gandhi-medium.jpg"
         },
 
         {
-            name: 'Ivan Petrov',
-            url: "Rabi_img"
+            name: 'Rabindranat Tagor',
+            url: "https://interesnyefakty.org/wp-content/uploads/rabindranat-tagor.jpg"
         }
     ]);
     return (
