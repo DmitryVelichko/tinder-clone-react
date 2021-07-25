@@ -6,16 +6,17 @@ import TinderCards from './TinderCards';
 import SwipeButtons from './SwipeButtons';
 
 
-function App() {
+function App() { 
   return (
     <div className="App">
-    <Header />
     <Router>  
       <Switch>
         <Route path="/chat">
+      <Header backButton="/" />
           <h1>I am the chatpage</h1>
         </Route>
         <Route path="/">
+      <Header />
           <TinderCards />
           <SwipeButtons />
         </Route>
