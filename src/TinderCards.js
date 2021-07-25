@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import TinderCard from 'react-tinder-card';
 import './TinderCards.css';
+import database from './firebase';
 
-useEffect(() => {
-
-}, []);
 
 function TinderCards() {
     const [people, setPeople] = useState([
@@ -18,6 +16,13 @@ function TinderCards() {
             url: "https://interesnyefakty.org/wp-content/uploads/rabindranat-tagor.jpg"
         }
     ]);
+
+    useEffect(() => {
+        database.collection('people').onSnapshot(snapshot => (
+            snapshot.docs.map(doc => doc.data())
+        ));
+    }, []);
+
     return (
         <div>
             <h1>Tinder Cards</h1>
