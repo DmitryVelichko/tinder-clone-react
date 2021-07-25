@@ -5,21 +5,11 @@ import database from './firebase';
 
 
 function TinderCards() {
-    const [people, setPeople] = useState([
-        {
-            name: 'Mahatma Gandhi',
-            url: "https://helenadailyenglish.com/wp-content/uploads/2021/02/mahatma-gandhi-medium.jpg"
-        },
-
-        {
-            name: 'Rabindranat Tagor',
-            url: "https://interesnyefakty.org/wp-content/uploads/rabindranat-tagor.jpg"
-        }
-    ]);
+    const [people, setPeople] = useState([]);
 
     useEffect(() => {
         database.collection('people').onSnapshot(snapshot => (
-            snapshot.docs.map(doc => doc.data())
+            setPeople(snapshot.docs.map(doc => doc.data()))
         ));
     }, []);
 
