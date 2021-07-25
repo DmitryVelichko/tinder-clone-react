@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TinderCard from 'react-tinder-card';
 import './TinderCards.css';
-import Mahatma_img from './img/Mahatma.jpg';
-// import Rabi_img from './img/rabindranat-tagor.jpg';
+
+useEffect(() => {
+
+}, []);
 
 function TinderCards() {
     const [people, setPeople] = useState([
