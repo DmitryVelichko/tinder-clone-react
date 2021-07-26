@@ -8,7 +8,7 @@ function Chats() {
                 name="Rachel"
                 message="What's up?"
                 timestamp="40 seconds ago"
-                profilePic="https://i.picsum.photos/id/823/5616/3744.jpg?hmac=aUM263SMqOF0mo3zsTkx2otCCV-0D3gyrzULgBEpk5Q" 
+                profilePic="https://i.picsum.photos/id/823/5616/3744.jpg?hmac=aUM263SMqOF0mo3zsTkx2otCCV-0D3gyrzULgBEpk5Q"
             />  
             <Chat 
                 name="Eva"
