@@ -12,12 +12,11 @@ const Header = ({ backButton }) => {
     return (
         <div className='header'>
             {backButton ? (
-               <IconButton><ArrowBackIosIcon fontSize='large' className="header__icon" /></IconButton>
+               <IconButton onClick={() => history.replace(backButton)}><ArrowBackIosIcon fontSize='large' className="header__icon" /></IconButton>
             ) : (
                <IconButton><PersonIcon className="header__icon" fontSize="large"/></IconButton> 
             )
         }
-           
 
           <Link to="/">  
             <img className="header__logo" src={tinder_logo} alt="tinder logo fire"/>
