@@ -11,6 +11,10 @@
   flex: 1;
 }
 
+.chat__details > p {
+  color: gray;
+}
+
 .chat__image {
   margin-right: 20px;
 }
