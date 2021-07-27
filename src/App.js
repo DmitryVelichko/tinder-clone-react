@@ -13,6 +13,10 @@ function App() {
     <Router>  
       <Switch>
         <Route path="/chat">
+           <Header backButton="/chat" />
+          <Chats />
+        </Route>
+        <Route path="/chat">
       <Header backButton="/" />
           <Chats />
         </Route>
