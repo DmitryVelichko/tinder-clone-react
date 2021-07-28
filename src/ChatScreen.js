@@ -1,8 +1,17 @@
 import React from 'react'
 
 function ChatScreen() {
+
+    const [messages, setMessages] = useState([
+        {
+            name: 'Ellen',
+            image: '...',
+            message: 'Whats up'
+        }
+    ])
+
     return (
-        <div>
+        <div className="chatScreen">
             <h3>Chat Screen</h3>
         </div>
     )
