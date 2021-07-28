@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import TinderCards from './TinderCards';
 import SwipeButtons from './SwipeButtons';
 import Chats from './Chats';
+import ChatScreen from './ChatScreen';
 
 
 function App() { 
@@ -12,9 +13,8 @@ function App() {
     <div className="App">
     <Router>  
       <Switch>
-        <Route path="/chat/:person"> {/* : represents wildcard. Any value can go here and that would be a valid URL */}
+        <Route path="/chat/:person"> 
            <Header backButton="/chat" />
-          <Chats />
           <ChatScreen />
         </Route>
         <Route path="/chat">
