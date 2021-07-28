@@ -7,8 +7,16 @@ function ChatScreen() {
             name: 'Ellen',
             image: '...',
             message: 'Whats up'
+        },
+        {
+            name: 'Ellen',
+            image: '...',
+            message: 'How is it going?'
+        },
+        {
+            message: 'How\'s it going!'
         }
-    ])
+    ]);
 
     return (
         <div className="chatScreen">
