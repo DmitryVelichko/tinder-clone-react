@@ -12,9 +12,10 @@ function App() {
     <div className="App">
     <Router>  
       <Switch>
-        <Route path="/chat">
+        <Route path="/chat/:person"> {/* : represents wildcard. Any value can go here and that would be a valid URL */}
            <Header backButton="/chat" />
           <Chats />
+          <ChatScreen />
         </Route>
         <Route path="/chat">
       <Header backButton="/" />
