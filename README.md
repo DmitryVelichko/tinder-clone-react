@@ -8,6 +8,7 @@ Tinder clone built with ReactJS, using React Router, Hooks, MaterialUI and Fireb
 
 ![Untitled4](https://user-images.githubusercontent.com/42185328/127619928-195d23bc-f22d-406d-bbd9-b5fb2bd77819.png)
 
+![Untitled5](https://user-images.githubusercontent.com/42185328/127620327-07881941-0c6f-4720-8d56-185a91ad762c.png)
 
 
 
