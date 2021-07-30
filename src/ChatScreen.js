@@ -48,7 +48,6 @@ function ChatScreen() {
                     />
                     <button className="chatScreen__inputButton">SEND</button>
                 </form>
-            
         </div>
     )
 }
