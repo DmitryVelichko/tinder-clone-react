@@ -22,9 +22,10 @@ function ChatScreen() {
 
     return (
         <div className="chatScreen">
-            <p>YOU MATCHED WITH ELLEN ON 10/08/21</p>
+            <p className="chatScreen__timestamp">YOU MATCHED WITH ELLEN ON 10/08/21</p>
             {messages.map((message) => (
-                <div className="chatScreen__message">
+                message.name ? (
+                     <div className="chatScreen__message">
                     <Avatar 
                         className="chatScreen__image"
                         alt={message.name}
@@ -32,6 +33,12 @@ function ChatScreen() {
                     />
                     <p className="chatScreen__text">{message.message}</p>
                 </div>
+                ) : (
+                    <div className="chatScreen__message">
+                    <p className="chatScreen__textUser">{message.message}</p>
+                    </div>
+                )
+               
             ))}
         </div>
     )
